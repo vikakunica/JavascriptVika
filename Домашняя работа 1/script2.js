@@ -5,19 +5,27 @@ var p;
 switch(str2){
 	case '+' :
 		p=Number(str1)+Number(str3);
-	    console.log(p)
+	    console.log(p);
     break;
 	case '-':
 		p=Number(str1)-Number(str3);
-	    console.log(p)
+	    console.log(p);
 	break;
 		case '*':
 		p=Number(str1)*Number(str3);
-	    console.log(p)
+	    console.log(p);
 	break;
 	
 	case '/':
+	    if(Number(str2)==true){
 		p=Number(str1)/Number(str3);
-	    console.log(p)
-	break;
+	    console.log(p);
+	}else{
+		console.warn('Division by zero');
 	}
+	break;
+
+	case '^':
+	p=Math.pow(Number(str1),Number(str3));
+	console.log(p);
+}

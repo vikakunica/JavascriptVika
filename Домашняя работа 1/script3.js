@@ -12,6 +12,5 @@ if (x>=-1 && x<=1){
     }
    console.log(asin); 
  }else{
- 	console.log('x is not in the range');
+ 	console.warn('x is not in the range');
  }
-console.log(Number(x));
