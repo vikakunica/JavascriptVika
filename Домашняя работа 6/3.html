@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Калькулятор</title>
+<style type="text/css">
+    #calculator * {font-size: 25px;}
+    #calculator table {border: solid 3px silver; border-spacing: 3px; background-color: #FFDAB9; }
+    #calculator table td {border-spacing: 3px;}
+    input.display {width: 240px; text-align: right;}
+    input[type= button] {width: 55px; height: 40px;}
+</style>
+</head>
+
+<body>
+<form name="calc" id="calculator">
+    <table>
+    <tr>
+    <td>
+        <input type="text" id="input" size="16" class="display">
+    </td>
+    </tr>
+    <tr>
+    <td class="buttons">
+        <input type="button" id="one" value="1">
+        <input type="button" id="two" value="2">
+        <input type="button" id="three" value="3">
+        <input type="button" id="add" value="+">
+        <br>
+        <input type="button" id="four" value="4">
+        <input type="button" id="five" value="5">
+        <input type="button" id="six" value="6">
+        <input type="button" id="sub" value="-">
+        <br>
+        <input type="button" id="seven" value="7">
+        <input type="button" id="eight" value="8">
+        <input type="button" id="nine" value="9">
+        <input type="button" id="mul" value="x">
+        <br>
+        <input type="button" id="zero" value="0">
+        <input type="button" id="equal" value="=">
+        <input type="button" id="div"  value="/">
+        <input type="button" id="clear" value="c">
+        <br>
+        <input type="button" id="mem+" value="m+">
+        <input type="button" id="mem-" value="m-">
+        <input type="button" id="mem" value="mrc">
+    </td>
+    </tr>
+    </table>
+</form>
+<script src="script3.js"></script>
+</body>
+</html>
