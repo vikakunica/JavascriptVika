@@ -1,0 +1,15 @@
+div:not(.nqe){
+	width: 280px;
+	border: 4px groove grey;
+	background-color: silver;
+}
+p{
+	text-align: center;
+}
+button{
+	background: #9479fa;
+}
+.qe{
+   text-decoration: underline;
+
+}

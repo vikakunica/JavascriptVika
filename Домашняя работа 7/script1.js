@@ -4,7 +4,7 @@ input.onkeypress = function(e){
 	if (e.ctrlKey || e.altKey || e.metaKey) return;
 	var chr = getChar(e);
 	if(chr == null) return;
-	if(chr < '0'|| chr > '9') return false;
+	if(chr < '0'|| chr > '9') e.preventDefault();
 }
    function getChar(event) {
       if (event.which == null) {

@@ -1,0 +1,38 @@
+.kletka{
+	clear: both;
+height: 50px;
+  width: 50px;
+  border: 1px solid silver;
+   border-radius: 15px
+}
+.st{
+	white-space: nowrap;
+	display: inline-table;
+}
+#main {
+  margin-left: 30%;
+}
+.snake{ 
+  clear: both;
+height: 50px;
+  width: 50px;
+  background-color: green;
+   border: 1px solid silver;
+    border-radius: 15px
+}
+.golova{ 
+  clear: both;
+ height: 50px;
+  width: 50px;
+  background-color: pink;
+  border: 1px solid silver;
+  border-radius: 15px
+}
+.eda{
+   clear: both;
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  border: 1px solid silver;
+  border-radius: 15px
+}
