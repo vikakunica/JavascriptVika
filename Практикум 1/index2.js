@@ -27,7 +27,6 @@ for(var i = 0; i < pos.length; i++) {
 	Analys[i].pras = pos[i];
 	Analys[i].pr = pr[i];
 }
-console.log(Analys);
 
 var body = document.getElementsByTagName('body')[0];
 var quest = function(Qu){
@@ -88,12 +87,16 @@ var div = document.createElement('div');
 	var t = 0;
 	for (var i = 0; i < a.length; i++){
 		for(var j = 0; j<a[i].length; j++){
-			if(a[i].length==Questions[i].rans.length&&a[i][j]==Questions[i].rans[j]){
+			if((a[i].length==Questions[i].rans.length)&&(a[i][j]==Questions[i].rans[j])){
 				t+=1;
-				k+=Questions[i].ball;
+				if(Questions[i].rans.length>1){
+					var t1 = Questions[i].ball
+				}
+				else k+=Questions[i].ball;
 			}
 		}
     }
+    k+=t1;
     var div1 = document.createElement('div');
     body.appendChild(div1);
     var p = Math.round((k/sum)*100);
@@ -111,7 +114,7 @@ var div = document.createElement('div');
     p3.innerText = 'От всех баллов: ' + p + '%';
       var i = 0
       while (i<Analys.length){
-      if(Analys[i].pr > p) {prr = Analys[i].pras; break}
+      if(p<=Analys[i].pr) {prr = Analys[i].pras; break}
       else i = i+1;
       }
     p4.innerText = prr;
