@@ -26,14 +26,8 @@ var add = function(data,divv){
 	return divv;
 }
 function isVisible(elem) {
- console.log('hi')
   var coords = elem.getBoundingClientRect();
-
-  var windowHeight = document.documentElement.clientHeight;
-
-  var bottomVisible = coords.bottom <= (windowHeight + 1)
-  console.log(coords.bottom);
-  console.log(windowHeight + 1)
+  var bottomVisible = coords.bottom < window.innerHeight + 1;
   return bottomVisible;
 }
 xhr.send(null);
