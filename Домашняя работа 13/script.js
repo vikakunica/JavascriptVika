@@ -16,11 +16,16 @@ var link = document.getElementById('href');
 var del = document.getElementById('delete');
 div.contentEditable = true;
 div.addEventListener('click',function(e){
-	// if(e.target.)
-	// if(e.target.childNodes +'' == '[b]') bold.classList.toggle('onn');
-	// if(e.target.firstChild.tagName=='B') bold.classList.toggle('onn');
+    var bold1  = document.queryCommandState('bold');
+    if (bold1) bold.classList.add('onn');
+    else bold.classList.remove('onn');
+    var italic1  = document.queryCommandState('italic');
+    if (italic1) italic.classList.add('onn');
+    else italic.classList.remove('onn');
+    var underline1  = document.queryCommandState('underline');
+    if (underline1) underline.classList.add('onn');
+    else underline.classList.remove('onn');
 	console.log(e)
-// e.target
 })
 bold.addEventListener('click',function(){
 	if(document.getSelection().toString()!='') bold.classList.toggle('onn');
