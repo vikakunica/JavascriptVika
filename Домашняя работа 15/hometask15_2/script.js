@@ -8,14 +8,10 @@ var bt3 = document.getElementsByTagName('button')[2]
 var bt4 = document.getElementsByTagName('button')[3]
 var datagl = context.getImageData(10,10,700,500);
 var bw1=0;
-var neg = 0;
-var sep = 0;
 console.log(bw1);
 bt1.addEventListener('click',function(){
-	var data = context.getImageData(10,10,700,500);
-	console.log(bw1);
-	console.log(bw1==0);
-	if(bw1==0){
+    context.drawImage(img,10,10,700,500) 
+    var data = context.getImageData(10,10,700,500);
 	for (var i = 0 ; i < data.data.length; i++){
 		var r = data.data[4*i];
 		var g = data.data[4*i+1];
@@ -28,12 +24,10 @@ bt1.addEventListener('click',function(){
 		data.data[4*i + 3] = a;
 	}
 	context.putImageData(data,10,10);
-	bw1+=1;
-}
 })
 bt2.addEventListener('click',function(){
-   var data = context.getImageData(10,10,700,500);
-	if (neg==0) {
+   		context.drawImage(img,10,10,700,500)
+   		var data = context.getImageData(10,10,700,500);
 		for (var i = 0 ; i < data.data.length; i++){
 		var r = data.data[4*i];
 		var g = data.data[4*i+1];
@@ -48,12 +42,10 @@ bt2.addEventListener('click',function(){
 		data.data[4*i + 3] = a;
 	}
 	context.putImageData(data,10,10);
-	neg+=1;
-}
 })
 bt3.addEventListener('click',function(){
+	context.drawImage(img,10,10,700,500)
 	var data = context.getImageData(10,10,700,500);
-	if (sep==0) {
 	for (var i = 0 ; i < data.data.length; i++){
 		var r = data.data[4*i];
 		var g = data.data[4*i+1];
@@ -68,12 +60,7 @@ bt3.addEventListener('click',function(){
 		data.data[4*i + 3] = a;
 	}
 	context.putImageData(data,10,10);
-	sep+=1;
-}
 })
 bt4.addEventListener('click',function(){
 	context.putImageData(datagl,10,10);
-	bw1=0;
-	neg=0;
-	sep=0;
 })
