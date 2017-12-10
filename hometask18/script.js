@@ -85,5 +85,6 @@ bt3.addEventListener('click',function(){
 	context.putImageData(data,10,10);
 })
 bt4.addEventListener('click',function(){
+	bw1 = 0;
 	context.putImageData(datagl,10,10);
 })
